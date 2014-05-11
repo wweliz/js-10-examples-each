@@ -1,0 +1,10 @@
+/* Universal styling elements */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Bounding box all content on page*/
+.container {
+	width: 960px;
+	margin:0 auto;
+}
