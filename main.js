@@ -186,17 +186,26 @@ randoma.forEach(function (a) {
 			{console.log(a + " is greater than 50.");}
 });
 
+var textarray = ["a", "b", "c", "d", "e"]
+
+textarray.forEach(function (x) {
+		if (x == "a")
+				{console.log("The word alphabet starts with the letter " + x +".");}
+		else
+				{console.log("The word alphabet does not starts with the letter " + x +".");}	
+});
+
 // citydata.forEach(function cstate (a) {
 // 		if (a == "Berlin" || "Hamburg")
 // 			{console.log(citydata[0].blnd+ " is a city-state.")}
 // 	});
 
-citydata.forEach(function (a) {
-		if (a == true)
-			{alert(a + " is a city-state.")}
-		else
-			{alert(a + " is NOT a city-state.")}
-	});
+// citydata.forEach(function (a) {
+// 		if (a == true)
+// 			{alert(a + " is a city-state.")}
+// 		else
+// 			{alert(a + " is NOT a city-state.")}
+// 	});
 
 // citydata.forEach(function (a) {
 // 		if (a == "Berlin" || "Hamburg")
@@ -206,9 +215,11 @@ citydata.forEach(function (a) {
 // 	});
 
 var sizearray1UP = []
-sizearray.forEach(function(a) {sizearray1UP.push(a+1);});
+sizearray.forEach(function (a) {sizearray1UP.push(a+1);});
 /* typing "sizearray1UP" in the console returns an new array [6, 3, 11, 5]  where the values in the array are each increased by 1 */
 
+var cityCityState = []
+citydata.forEach(function (a) {cityCityState.push(a);});
 
 var thingy = []
-pens.forEach(function(a) {thingy.push(a+1);});
+pens.forEach(function (a) {thingy.push(a+1);});
