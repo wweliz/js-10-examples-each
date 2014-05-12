@@ -133,7 +133,8 @@ size: 4
 
 var colorarray = pens.map (function (cl) {return cl.color;} )
 var howManyColors = colorarray.length
-console.log("There are " + howManyColors + " different colors of pens: " + colorarray[0] + ", " + colorarray[1] + ", " + colorarray[2] + " and " + colorarray[3] + ".")
+console.log("There are " + howManyColors + " different colors of pens: " + colorarray[0] + ", " + colorarray[1] + ", " + colorarray[2] + " and " 
+	+ colorarray[3] + ".")
 
 var inkarray = pens.map (function (ic) {return ic.inkColor;} )
 var howManyInks = inkarray.length
@@ -149,3 +150,65 @@ console.log("There are " + howManyGrips.length + " different pens; of those, " +
 var sizearray = pens.map (function (sz) {return sz.size;} )
 var addallsize = sizearray.reduce (function (a, b) {return a + b;} )
 console.log("The average pen length is " + getavg (addallsize, sizearray.length) + " inches." )
+
+var sizearray1UP = []
+sizearray.forEach(function(a) {sizearray1UP.push(a+1);});
+/* typing "sizearray1UP" in the console returns an new array [6, 3, 11, 5]  where the values in the array are each increased by 1 */
+
+////////// FOR EACH LOOPS -- basically a .map that does anything you tell it to in the nested function(s); can only be used with arrays //////////
+
+var randoma = [7, 79, 50, 84, 32, 34]
+
+// randoma.forEach(function (a) {
+// 		if (a < 50)
+// 				{alert(a + " is less than 50.");}
+// 		if (a == 50)
+// 				{alert(a + " is equal to 50.");}
+// 		if (a > 50)
+// 			{alert(a + " is greater than 50.");}
+// });
+
+randoma.forEach(function (a) {
+		if (a < 50)
+				{console.log(a + " is less than 50.");}
+		if (a == 50)
+				{console.log(a + " is equal to 50.");}
+		if (a > 50)
+			{console.log(a + " is greater than 50.");}
+});
+
+randoma.forEach(function (a) {
+		if (a < 50)
+				{console.log(a + " is less than 50.");}
+		if (a == 50)
+				{console.log(a + " is equal to 50.");}
+		if (a > 50)
+			{console.log(a + " is greater than 50.");}
+});
+
+// citydata.forEach(function cstate (a) {
+// 		if (a == "Berlin" || "Hamburg")
+// 			{console.log(citydata[0].blnd+ " is a city-state.")}
+// 	});
+
+citydata.forEach(function (a) {
+		if (a == true)
+			{alert(a + " is a city-state.")}
+		else
+			{alert(a + " is NOT a city-state.")}
+	});
+
+// citydata.forEach(function (a) {
+// 		if (a == "Berlin" || "Hamburg")
+// 			{console.log(citydata[0].blnd+ " is a city-state.")}
+// 		if (a != "Berlin" || "Hamburg")
+// 			{console.log(citydata[0].blnd+ " is NOT a city-state.")}
+// 	});
+
+var sizearray1UP = []
+sizearray.forEach(function(a) {sizearray1UP.push(a+1);});
+/* typing "sizearray1UP" in the console returns an new array [6, 3, 11, 5]  where the values in the array are each increased by 1 */
+
+
+var thingy = []
+pens.forEach(function(a) {thingy.push(a+1);});
